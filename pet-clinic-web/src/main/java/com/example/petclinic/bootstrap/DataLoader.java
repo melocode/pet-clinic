@@ -20,12 +20,12 @@ public class DataLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        ownerService.save(new Owner(1L, "Michael", "Weston"));
-        ownerService.save(new Owner(2L, "James", "Bond"));
+        ownerService.save(new Owner("Michael", "Weston"));
+        ownerService.save(new Owner("James", "Bond"));
         System.out.println("Loaded Owners...");
 
-        vetService.save(new Vet(1L, "Sam", "Axe"));
-        vetService.save(new Vet(2L, "Lucy", "Sky"));
+        vetService.save(new Vet("Sam", "Axe"));
+        vetService.save(new Vet("Lucy", "Sky"));
         System.out.println("Loaded Vets...");
     }
 }
