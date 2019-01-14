@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @RequestMapping("owners")
 @Controller
-public class OwnersIndex {
+public class OwnersController {
 
     private OwnerService ownerService;
 
-    public OwnersIndex(OwnerService ownerService) {
+    public OwnersController(OwnerService ownerService) {
         this.ownerService = ownerService;
     }
 
